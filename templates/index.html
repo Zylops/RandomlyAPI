@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>H1 { text-align: center }</style>
+    <style>
+    .centered {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
+      }</style>
+    <meta charset="UTF-8">
+    <title>RandomlyAPI</title>
+  </head>
+  <body>
+    <div class = "w3margin w3-margin-top w3-margin-left w3-margin-right w3-margin-bottom centered">
+    <div class="w3-card-2 w3-white w3-padding-16" style="width:90%">
+    <h1 textalign=centre> Welcome to the RandomlyAPI!‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎</h1>
+    </div>
+    <br>
+    <ul class="w3-ul w3-card" style="width:90%">
+        <li><h2>Endpoints:</h2></li>
+        {% for endpoint in links %}
+        <li><a href="{{ endpoint.split('.com/')[1] }}">{{ endpoint }}</a></li>
+        {% endfor %}
+    </ul>
+    <div class="w3-container w3-card" style="width:90%">
+      <h2 style="text-align:center">Made with ❤ by Zylops!</h2>
+    </div>
+    </div>
+  </body>
+</html>‎‎‎
